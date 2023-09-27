@@ -51,23 +51,11 @@ img {
 }
 
 .container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.section-list-title {
-  color: var(--headings-color);
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  margin-bottom: 8px;
-}
-
-.section-list {
-  display: flex;
-  gap: 24px;
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .visually-hidden {
@@ -183,13 +171,13 @@ img {
 .contacts-link:focus {
   color: var(--active-button-color);
 }
+/*End Navigation-section*/
 
 /*Hero-section*/
-
 .hero-section {
-  max-width: 1440px;
+  max-width: 320px;
   margin: 0 auto;
-  padding: 188px 0;
+  padding: 72px 0;
   background-color: var(--headings-color);
   background-image: linear-gradient(
       to bottom,
@@ -204,15 +192,17 @@ img {
 
 .hero-title {
   color: var(--body-bg-color);
-  font-size: 56px;
+  font-family: inherit;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
-  max-width: 496px;
-  margin-bottom: 48px;
-  margin-right: auto;
-  margin-left: auto;
+  text-transform: capitalize;
+  max-width: 288px;
+  margin-bottom: 72px;
+  margin-right: 16px;
+  margin-left: 16px;
 }
 
 .button {
@@ -244,6 +234,20 @@ img {
 
 .features-section {
   padding: 120px 0;
+}
+
+.section-list {
+  display: flex;
+  gap: 24px;
+}
+
+.section-list-title {
+  color: var(--headings-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .features-item {
