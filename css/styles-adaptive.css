@@ -28,6 +28,16 @@
   }
 }
 
+@media screen and (max-width: 1157px) {
+  .features-picture .icon {
+    display: none;
+  }
+
+  .section-list-text {
+    font-weight: 500;
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
@@ -43,5 +53,16 @@
 
   .hero-title {
     margin-bottom: 48px;
+  }
+
+  .features-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    border-radius: 4px;
+    border: 1px solid var(--light-grey-color);
+    background: var(--bright_text-color);
+    margin-bottom: 8px;
   }
 }
