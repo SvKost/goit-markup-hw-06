@@ -305,7 +305,7 @@ img {
 
 .team-section {
   background-color: var(--bright_text-color);
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .team-inner {
@@ -321,9 +321,13 @@ img {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-
   width: 100%;
-  margin-bottom: 72px;
+}
+
+@media screen and (max-width: 767px) {
+  .team-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
 }
 
 .team-image {
@@ -381,7 +385,7 @@ img {
 /*Portfolio-section*/
 
 .portfolio-section {
-  padding: 120px 0 120px 0;
+  padding: 120px 0;
 }
 
 .portfolio-list {
@@ -818,9 +822,21 @@ textarea::placeholder {
     text-align: left;
   }
 
+  .team-section-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 64px;
+    column-gap: 24px;
+    padding: 0 108px;
+  }
+
   .team-item {
     flex-basis: calc((100% - 24px) / 2);
-    margin-bottom: 64px;
+    margin: 0;
+  }
+
+  .team-image {
+    margin: 0 auto;
   }
 }
 
@@ -891,6 +907,16 @@ textarea::placeholder {
     gap: 24px;
   }
 
+  .team-section {
+    padding: 120px 0;
+  }
+
+  .team-section-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+    padding: 0;
+  }
+
   .section-list-title {
     font-size: 20px;
     font-weight: 500;
@@ -904,6 +930,6 @@ textarea::placeholder {
   }
 
   .team-item {
-    width: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 72px) / 4);
   }
 }
