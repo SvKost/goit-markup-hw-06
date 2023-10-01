@@ -1018,10 +1018,12 @@ textarea::placeholder {
 
   .inner-footer {
     display: flex;
+    flex-wrap: nowrap;
     align-items: baseline;
   }
 
   .footer-logo-text {
+    min-width: 264px;
     margin-right: 120px;
   }
 
