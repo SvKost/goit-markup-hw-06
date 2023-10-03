@@ -166,11 +166,6 @@ img {
   font-style: normal;
 }
 
-.contacts-list {
-  display: flex;
-  gap: 40px;
-}
-
 @media screen and (max-width: 767px) {
   .contacts-list {
     display: none;
@@ -831,13 +826,19 @@ textarea::placeholder {
   letter-spacing: 0.04em;
 }
 
+@media screen and (max-width: 767px) {
+  .modal-checkbox-label {
+    display: contents;
+  }
+}
+
 .privacy-policy {
   color: var(--primary-brand-color);
   text-decoration: underline;
 }
 
 .modal-checkbox-check {
-  width: 16px;
+  min-width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
@@ -969,6 +970,31 @@ textarea::placeholder {
     max-width: 768px;
   }
 
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-logo {
+    margin-right: 120px;
+  }
+
+  .header-email {
+    margin-bottom: 12px;
+  }
+
+  .contacts-link {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    padding: 0;
+  }
+
+  .header-menu-btn {
+    display: none;
+  }
+
   .hero-section {
     max-width: 768px;
     margin: 0 auto;
@@ -1056,7 +1082,7 @@ textarea::placeholder {
 
   .subscribe-input {
     width: 100%;
-    max-width: 264px;
+    min-width: 264px;
     margin-bottom: 0;
   }
 }
@@ -1089,6 +1115,21 @@ textarea::placeholder {
     max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
+  }
+
+  .contacts-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .contacts-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .header-email {
+    margin-bottom: 0;
   }
 
   .hero-section {

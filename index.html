@@ -41,7 +41,7 @@
         </nav>
         <address class="address-section">
           <ul class="contacts-list">
-            <li>
+            <li class="header-email">
               <a class="contacts-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
@@ -649,7 +649,7 @@
     <!--End-Footer-section-->
 
     <!-- Modal window -->
-    <div class="backdrop is-open" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="modal-close" type="button" data-modal-close>
           <svg class="close-icon" width="8" height="8">
@@ -727,8 +727,10 @@
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="privacy-policy" href="#">Privacy Policy</a>
+              <span class="privacy-policy-wrap">
+                I accept the terms and conditions of the
+                <a class="privacy-policy" href="#">Privacy Policy</a></span
+              >
             </label>
           </div>
 
