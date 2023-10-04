@@ -249,7 +249,6 @@ img {
 
 @media screen and (max-width: 767px) {
   .hero-title {
-    -webkit-text-stroke: 1px #000;
     text-transform: capitalize;
     padding: 0 50px;
   }
